@@ -2,7 +2,7 @@
 
 
 
-public class Prog3 {
+public class Prog4 {
     public static void main(String[] args) {
         String[] inputArrayStrings = {"horse", "dog", "cat", "horse", "dog"};
         int index = 0 ;
