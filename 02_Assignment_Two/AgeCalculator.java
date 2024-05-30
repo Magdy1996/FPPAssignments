@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class AgeCalculator {
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-M-d");
+
     public Period calculateAge(LocalDate birthday) {
         LocalDate today = LocalDate.now();
         //  Period res = Period.between(birthday, today);
@@ -14,7 +15,7 @@ public class AgeCalculator {
         return Period.between(birthday, today); // Return periods as Year, Month and Days
     }
 
-    public LocalDate getBirthday() {
+    public  LocalDate getBirthday() {
         Scanner scanner = new Scanner(System.in);
         LocalDate birthday;
         while (true) {
@@ -32,12 +33,5 @@ public class AgeCalculator {
         }
     }
 
-    public static void main(String[] args) {
-        AgeCalculator ageCalculator = new AgeCalculator();
-        LocalDate birthday = ageCalculator.getBirthday();
-        Period age = ageCalculator.calculateAge(birthday);
-        System.out.printf("Today you are %d years, %d months"
-                        + " and %d days old%n",
-                age.getYears(), age.getMonths(), age.getDays());
-    }
+
 }
