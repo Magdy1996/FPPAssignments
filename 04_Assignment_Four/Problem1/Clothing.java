@@ -31,4 +31,12 @@ public class Clothing extends Product {
         return basePrice * (1 - discountPercentage/100);
     }
 
+    @Override
+    public String toString(){
+        return String.format("Product Name : " + this.getProductName() + "\n"+
+                        "Price : "+ this.getPrice() + "\n"+
+                "brand : "+ this.getBrand() + "\n"
+                        + "discountPercentage"+ this.discountPercentage + "\n");
+    }
+
 }

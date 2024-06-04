@@ -33,4 +33,12 @@ public class Electronics extends Product{
         return updatedPrice;
     }
 
+    @Override
+    public String toString(){
+        return String.format("Product Name : " + this.getProductName() + "\n"+
+                        "Price : "+ this.getPrice() + "\n"+
+                "warranty : "+ this.getWarranty() + "\n"
+                        + "warrantyCost"+ this.warrantyCost+ "\n");
+    }
+
 }

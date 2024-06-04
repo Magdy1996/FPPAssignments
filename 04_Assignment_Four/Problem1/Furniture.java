@@ -32,4 +32,13 @@ public class Furniture extends Product{
         return updatedPrice;
     }
 
+    @Override
+    public String toString(){
+        return String.format(STR."""
+                Product Name : \{this.getProductName()}
+                Price : \{this.getPrice()}
+                material : \{this.getMaterial()}
+                shippingCost\{this.shippingCost}""" + "\n");
+    }
+
 }
