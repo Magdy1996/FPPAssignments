@@ -38,7 +38,7 @@ public class CommisionEmployee extends Employee {
 
     @Override
     public String toString(){
-        return super.toString() + String.format("Commission Salary: %s",this.getPayment());
+        return super.toString() + String.format("Commission Salary: %s\n",this.getPayment());
     }
 
 }
