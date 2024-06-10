@@ -48,6 +48,7 @@ public class MyPersonList {
   	// 4. Remove the person object by passing its lastname
 	public boolean remove(String lastName) {
 		for (int i = 0; i < size; i++) {
+			if(size== 0 ) return false;
 			if (Objects.equals(PersonArray[i].getLast(), lastName)) {
 				for (int j = i; j < size - 1; j++) {
 					PersonArray[j] = PersonArray[j + 1];
