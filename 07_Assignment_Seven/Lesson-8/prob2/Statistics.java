@@ -10,8 +10,11 @@ public class Statistics {
 		//implement
 		//compute sum of all salaries of people in aList and return
 		double sum = 0.0;
+		if(employees == null) return sum;
 		for(EmployeeData emp : employees) {
-			sum += emp.getSalary();
+			if(emp != null){
+				sum += emp.getSalary();
+			}
 		}
 		return sum;
 	}
