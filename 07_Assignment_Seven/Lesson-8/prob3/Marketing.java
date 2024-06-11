@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 package w3l8.prob3;
 
 import java.util.ArrayList;
 import java.util.List;
+=======
+package assignments.lesson8.problem3;
+
+import java.util.Objects;
+>>>>>>> 7209dfc68a743601ea26335f09fa51c28b04fc15
 
 public class Marketing {
 	private String employeename;
@@ -43,4 +49,16 @@ public class Marketing {
 		return employeename + " " + productname + " " + salesamount;
 	}
 
+<<<<<<< HEAD
+=======
+	@Override
+	public boolean equals(Object o) {
+		if(o == null) return false;
+		if(!(o instanceof Marketing e)) return false;
+		if (this == o) return true;
+        return Double.compare(e.getSalesamount(), salesamount) == 0 &&
+				Objects.equals(e.getEmployeename(), employeename) &&
+				Objects.equals(e.getProductname(), productname);
+	}
+>>>>>>> 7209dfc68a743601ea26335f09fa51c28b04fc15
 }

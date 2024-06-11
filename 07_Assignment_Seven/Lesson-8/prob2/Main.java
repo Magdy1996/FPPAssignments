@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package w3l8.prob2;
+=======
+package Lesson8.Problem2;
+>>>>>>> 7209dfc68a743601ea26335f09fa51c28b04fc15
 
 import java.util.*;
 public class Main {
@@ -23,17 +27,37 @@ public class Main {
 		
 		//Implementation steps
 		//Step 1: implement the combine method, to combine the two lists
+<<<<<<< HEAD
 		List/*<specify type>*/ combined = combine(staff, teachers);
 		
 		//Step 2: pass the combined list to computeSumOfSalaries
 		double salarySum = Statistics.computeSumOfSalaries(combined);
 		System.out.println(salarySum);
+=======
+		//List/*<specify type>*/ combined = combine(staff, teachers);
+		List<EmployeeData> combined = combine(staff, teachers);
+
+		//Step 2: pass the combined list to computeSumOfSalaries
+		double salarySum = Statistics.computeSumOfSalaries(combined);
+		System.out.println("Total Salaries: " + salarySum);
+>>>>>>> 7209dfc68a743601ea26335f09fa51c28b04fc15
 		
 	}
 	
 	//IMPLEMENT
+<<<<<<< HEAD
 	public static List/*<specify type>*/ combine(List<Staff> staff, List<Teacher> teachers) {
 		return new ArrayList/*<specify type>*/();
+=======
+//	public static List/*<specify type>*/ combine(List<Staff> staff, List<Teacher> teachers) {
+	public static List<EmployeeData> combine(List<Staff> staff, List<Teacher> teachers) {
+		//return new ArrayList/*<specify type>*/();
+		List<EmployeeData> combined = new ArrayList<>();
+		combined.addAll(staff);
+		combined.addAll(teachers);
+		return combined;
+
+>>>>>>> 7209dfc68a743601ea26335f09fa51c28b04fc15
 	}
 
 }

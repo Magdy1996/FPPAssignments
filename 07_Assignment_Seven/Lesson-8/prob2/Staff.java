@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 package w3l8.prob2;
 
 public final class Staff {
+=======
+package Lesson8.Problem2;
+
+public final class Staff implements EmployeeData{
+>>>>>>> 7209dfc68a743601ea26335f09fa51c28b04fc15
 	private String name;
 	private double salary;
 	private int numDependants;
@@ -19,4 +25,8 @@ public final class Staff {
 	public int getNumDependants() {
 		return numDependants;
 	}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7209dfc68a743601ea26335f09fa51c28b04fc15
 }
