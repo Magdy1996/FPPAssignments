@@ -53,7 +53,6 @@ public class MyPersonList {
 				for (int j = i; j < size - 1; j++) {
 					PersonArray[j] = PersonArray[j + 1];
 				}
-				PersonArray[size - 1] = null;
 				size--;
 				return true;
 			}
@@ -97,10 +96,12 @@ public class MyPersonList {
 		list.add(new Person("Paul", "Corozza", 51));
 		list.add(new Person("Joe", "Lermon", 53));
 		list.add(new Person("Anne", "Dow", 55));
-		System.out.println("\nSize() : " + list.size() + "\n" + list);
-		list.remove("Tom");
-		System.out.println("\nSize() : " + list.size() + "\n" + list);
-		System.out.println("\nSearching of Lermon: " + list.find("Joe"));
-		System.out.println(list.get(2));
+		//System.out.println("\nSize() : " + list.size() + "\n" + list);
+		list.remove("Bruce");
+		System.out.println(list);
+//		list.remove("Corozza");
+//		System.out.println("\nSize() : " + list.size() + "\n" + list);
+//		System.out.println("\nSearching of Lermon: " + list.find("Joe"));
+//		System.out.println(list.get(2));
 	}
 }
