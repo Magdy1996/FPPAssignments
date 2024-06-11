@@ -27,7 +27,7 @@ public class MyPersonList {
 
 	// 2. get person information by passing index
 	public Person get(int i) {
-		if(i > size)
+		if(i > size || i < 0)
 			return null;
 		return PersonArray[i];
 		//return null;
@@ -36,6 +36,7 @@ public class MyPersonList {
 
 	// 3. Find the Person object using lastname
 	public boolean find(String lastName) {
+		if(lastName == null) return false;
 		for (Person p : PersonArray) {
 			if (Objects.equals(p.getLast(), lastName)) {
 				return true;
