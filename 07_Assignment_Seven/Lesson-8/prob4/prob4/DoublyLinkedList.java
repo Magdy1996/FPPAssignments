@@ -91,10 +91,14 @@ public class DoublyLinkedList {
         while (current.next != null){
             current= current.next;
         }
+        System.out.print("[");
         while (current != header) {
-            System.out.print(current.value +" ");
+            System.out.print(current.value );
+            if(current.previous != header)
+                System.out.print(" ");
             current = current.previous;
         }
+        System.out.print("]");
     }
 
     @Override
