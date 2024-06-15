@@ -7,6 +7,8 @@ public class ArrayQueueImpl {
     private int front = -1;
     private int rear = 0;
 
+    private int size = 0;
+
     public int peek() {
         if(isEmpty()) return -1;
         return arr[front];
@@ -22,9 +24,11 @@ public class ArrayQueueImpl {
 
         if(isEmpty()){ //a. if queue is empty, put in rear position
             arr[rear] = obj;
+            front++;
         }else {  //b. queue is not empty, put in after rear position
             arr[++rear] = obj;
         }
+        size++;
     }
 
     //remove from queue( remove from front)
@@ -33,6 +37,7 @@ public class ArrayQueueImpl {
         int item = arr[front];
         arr[front] = 0;  // set back to default value
         front++;
+        size--;
         return item;
     }
 
@@ -45,7 +50,7 @@ public class ArrayQueueImpl {
     }
 
     public int size(){
-        return rear+1;
+        return size;
     }
     private void resize(){
         arr = Arrays.copyOf(arr,arr.length * 2);
