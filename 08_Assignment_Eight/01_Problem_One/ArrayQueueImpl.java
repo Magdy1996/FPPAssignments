@@ -60,8 +60,6 @@ public class ArrayQueueImpl {
     public String toString() {
         if(front == -1) return "<empty>";
         StringBuilder sb = new StringBuilder();
-        System.out.println(front);
-        System.out.println(rear);
         for(int i = front; i <= rear; i++){
             sb.append(arr[i]).append(" ");
         }
