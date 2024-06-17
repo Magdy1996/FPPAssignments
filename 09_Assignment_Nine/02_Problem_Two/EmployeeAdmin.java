@@ -19,12 +19,12 @@ public class EmployeeAdmin {
 				Employee e = table.get(s);
 				if(e.getSalary() > 80000){
 					employees.add(e);
-					Collections.sort(employees,(p1,p2)->{
-						return p1.getSsn().compareTo(p2.getSsn());
-                    });
 				}
 			}
 		}
+		Collections.sort(employees,(p1,p2)->{
+			return p1.getSsn().compareTo(p2.getSsn());
+		});
 		return employees;
 	}
 	
